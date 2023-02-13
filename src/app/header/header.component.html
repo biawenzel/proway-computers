@@ -9,13 +9,13 @@
                     <a>Produtos</a>
                 </li>
                 <li>
-                    <a>
+                    <a routerLink="carrinho">
                         <i class="fa-solid fa-cart-shopping"></i>
                         Carrinho
-                        <span class="badge-carrinho"></span>
+                        <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
                     </a>
                 </li>
-                <li><a>Contato</a></li>
+                <li><a routerLink="contato">Contato</a></li>
                 <li><a><i class="fa-brands fa-square-facebook"></i></a></li>
                 <li><a><i class="fa-brands fa-square-instagram"></i></a></li>
                 <li><a><i class="fa-brands fa-square-twitter"></i></a></li>
